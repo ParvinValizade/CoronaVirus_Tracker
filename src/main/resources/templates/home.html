@@ -19,13 +19,14 @@
 <body>
 
 <div class="container">
-    <div style="background-color: #eff4ff">
+    <div >
+        <div>
     <h1>CoronaVirus Tracker Application</h1>
         <p>This application lists the current number of cases reported across the globe</p>
-
-        <div class="jumbotron">
-            <h1 style="color: lightslategray" class="display-4" th:text="${totalReportedCases}"></h1>
+        </div>
+        <div class="jumbotron" style="background-color: #eff4ff">
             <p class="lead">Total cases reported as of today</p>
+            <h1 style="color: lightslategray" class="display-4" th:text="${totalReportedCases}"></h1>
             <hr class="my-4">
             <p>
                 <span>New cases reported since previous day: </span>
